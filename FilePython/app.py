@@ -310,3 +310,117 @@ greet()
 
 
 
+
+
+
+#string manipulation
+my_string = "Hello, World! "
+print(my_string[2])
+# print("Length of string:", len(my_string))
+# print("Stripped string:", my_string.strip())
+# print("Uppercase string:", my_string.upper())
+# print("Lowercase string:", my_string.lower())
+# print("Replaced string:", my_string.replace("World", "Python"))
+# print("Sliced", my_string[0:5])
+# print("Sliced s:", my_string[2:])
+# print("Sliced s:", my_string[0:4:2])
+# print("Sliced s:", my_string[::2])
+print("Split string:", my_string.split(","))
+
+#slicing
+# print("Sliced string (0 to 5):", my_string[0:5])
+# print("Sliced string (7 to end):", my_string[7:])
+# print("Sliced string (every 2nd char):", my_string[0::2]) #every 2nd character means even index
+# print("Reversed string:", my_string[::-1])
+# print("Iterating through each character in the string")
+# for char in my_string:
+#     print(char)
+
+
+#Modules & Packages
+# import math_utils
+# import math_utils as mu
+# result_add = mu.add(10, 5)
+# result_subtract = mu.subtract(10, 5)
+# print("Addition result:", result_add)
+# print("Subtraction result:", result_subtract)
+# # # import math module
+# import math
+# # print("Square root of 16:", math.sqrt(16))
+# print("Value of pi:", math.pi)
+# print("Cosine of 0:", math.cos(0))
+# print("Logarithm of 1000:", math.log10(1000))
+# #Import specific functions
+# from math import sqrt
+# print("Square root of 25:", sqrt(25))
+
+# import random
+# print("Random number between 1 and 10:", random.randint(1, 10))
+
+# # import datetime
+# from datetime import datetime, timedelta, date
+# print("Current date and time:", datetime.now())
+
+
+# #package import
+# from Xisaab.greet import hello
+# from Xisaab import math_ops,greet
+# print(hello("Alice"))
+# print("Multiplication result:", math_ops.mult(4, 5))
+# print("Division result:", math_ops.divide(20, 4))
+
+
+#file handling
+#file exception handling
+
+
+# print(10/0)
+
+# try:
+#     x=int(input("Enter a number to divide 100: "))
+#     result=100/x
+#     print("Result:", result)
+# except ZeroDivisionError:
+#     print("Error: Division by zero is not allowed.")
+# except ValueError:
+#     print("Error: Please enter a valid number.")
+
+# try:
+#     x = int(input("Enter a number: "))
+#     print(10 / x)
+# except Exception as e:
+#     print("Error occurred:", e)
+
+
+try:
+    x = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input")
+else:
+    print("No error, you entered:", x)
+
+
+
+try:
+    x = int(input("Enter a number: "))
+    print(10 / x)
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+finally:
+    print("This always runs")
+
+
+
+    
+
+
+
+
+
+
+
+
+ 
+
+
+
