@@ -2,7 +2,7 @@
 class Animal:
     def __init__(self,name,):
         self.name=name
-    def show(self):
+    def show1(self):
         return f"Animal name is {self.name}"
         
 
@@ -19,7 +19,7 @@ class Dog(Animal):
 
 # Example usage:
 dog1 = Dog("Buddy", "Woof")
-print(dog1.name)  # Output: Buddy
+print(dog1.show1())  # Output: Buddy
 print(dog1.show())  # Output: sound is Woof
 
 #multible inheritance
@@ -31,10 +31,14 @@ class Mother:
         return "I love cooking."
     
 class Child(Father, Mother):
+    @staticmethod
+    def chook():
+         print("hello")
     def playing(self):
         return "I like playing."
 # Example usage:
 child1 = Child()
+Child.chook()
 print(child1.gardening())  # Output: I enjoy gardening.
 print(child1.cooking())    # Output: I love cooking.
 print(child1.playing())    # Output: I like playing.
