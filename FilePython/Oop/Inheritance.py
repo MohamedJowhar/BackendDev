@@ -37,6 +37,24 @@ class Child(Father, Mother):
     def playing(self):
         return "I like playing."
 # Example usage:
+
+class math:
+    x=int(input("Enter first number: "))
+    y=int(input("Enter second number: "))
+   
+
+class child(math):
+     sum=math.x+math.y
+     
+
+class xog(child):
+    def display(self):
+        print("The sum is:",self.sum)
+obj=xog()
+obj.display()
+
+
+
 child1 = Child()
 Child.chook()
 print(child1.gardening())  # Output: I enjoy gardening.
