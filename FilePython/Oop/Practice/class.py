@@ -137,7 +137,7 @@ class BankAccount:
         else:
             self.balance -= amount
             self.transactions.append(f"Withdrew {amount}")
-            print(f"Withdrew {amount}. New balance is {self.balance}.")
+            print(f"Withdrew {amount}.New balance is {self.balance}.")
 
     def show_transactions(self):
         if not self.transactions:
