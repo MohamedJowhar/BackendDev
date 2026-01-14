@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',#messaging framework which allows you to store messages in one request and retrieve them for display in a subsequent request
     'django.contrib.staticfiles',#images,stactic,css,js files
      "playground",#custom app
+     "store"
+     "Tags"
+      
 ]
 
 MIDDLEWARE = [
